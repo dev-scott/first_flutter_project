@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/counter_app.dart';
 import 'package:hello_world/grid_view_example.dart';
 
 class MenuPage extends StatelessWidget {
@@ -16,7 +17,11 @@ class MenuPage extends StatelessWidget {
           children: [
             ElevatedButton(onPressed: (){
               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => GridViewExample(),),);
-            }, child: Text("Go Grid"))
+            }, child: Text("Go Grid")),
+
+            ElevatedButton(onPressed: (){
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => CounterApp(),),);
+            }, child: Text("Counter App"))
           ],
         ),
       ),
